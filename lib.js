@@ -6,6 +6,6 @@ function calc(height) {
   
   const t1 = calc(180);
   
-  if (t1 !== 72) {
+  if (t1 !== 70) {
     throw new Error('test failed');
   }
