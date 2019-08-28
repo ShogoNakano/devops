@@ -26,8 +26,15 @@
 　　バリュー：個人githubで生成した Personal access token (scopeは"repo"のみ)
 　　(https://github.com/settings/tokens)
 5. githubのリポジトリに対してファイルのアップロードを実施
-　　今回のワークショップでは、全部で4ファイルアップロードする
+　　今回のワークショップでは、全部で3ファイルアップロードする
 　　・index.html
 　　・lib.js
 　　・package.json
-　　・.travis.yml -> このファイルが無いと travis CI側かアクティブなリポジトリとして認識されないので注意
+6. github上で「Create new file」ボタンをクリックし、travis CI用の
+　　設定ファイルを作成する。
+　　ファイル名：.travis.yml
+　　 -> このファイルが無いと travis CI側からアクティブなgithubリポジトリとして
+　　　　　認識されないので注意
+7. travis CIの画面に切り替えて「Sync account」でgithubと同期をとり、
+　　githubと連携させたリポジトリを有効化する
+8. 手動での実行、もしくはファイルをプッシュすることで CIが発火する
