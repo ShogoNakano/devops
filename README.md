@@ -1,20 +1,6 @@
 # セットアップ
 
-## github
-
-1. 自分自身のリポジトリを作成
-2. masterブランチにソースファイルをアップロード
-
-
-## Travis CI
-
-1. travis-ci.org にアクセス
-2. githubアカウントでログイン
-3. プロジェクトのSettings画面に遷移し、Environment Variablesで環境変数を登録
-　　環境変数名：GITHUB_TOKEN
-　　バリュー：個人githubで生成した Personal access token (scopeは"repo"のみ)
-　　(https://github.com/settings/tokens)
-
+[![Build Status](https://travis-ci.org/ShogoNakano/devops.svg?branch=master)](https://travis-ci.org/ShogoNakano/devops)
 
 ## 全体を通しての手順
 
@@ -38,3 +24,6 @@
 7. travis CIの画面に切り替えて「Sync account」でgithubと同期をとり、
 　　githubと連携させたリポジトリを有効化する
 8. 手動での実行、もしくはファイルをプッシュすることで CIが発火する
+9. CI側でのビルド結果がgithubの登録済みメールアドレス宛に届く
+10. ビルドが成功した場合は、githubの対象リポジトリの Settings タブをクリックして
+　　 GitHub Pages欄までスクロールするとデプロイした内容を確認できるURLが生成されている
